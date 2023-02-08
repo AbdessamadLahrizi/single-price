@@ -1,0 +1,188 @@
+/* varaibles */
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* varaibles */
+/* global */
+* {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    color: var(--grayish-blue);
+    line-height: 1.6;
+}
+
+/* global */
+
+main {
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    main {
+        padding: 30px 0;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+}
+
+@media (max-width: 767px) {
+    .flex {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .flex .box {
+        height: 350px;
+    }
+}
+
+.flex .join,
+.flex .monthly,
+.flex .why-us {
+    padding: 40px
+}
+
+.flex .join {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+
+.flex .join h2 {
+    color: var(--cyan);
+    margin: 20px 0;
+}
+
+.flex .join .hassle-free {
+    color: var(--bright-yellow);
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.flex .monthly {
+    flex-basis: 50%;
+    background-color: var(--cyan);
+    border-radius: 0 0 0 10px;
+    -webkit-border-radius: 0 0 0 10px;
+    -moz-border-radius: 0 0 0 10px;
+    -ms-border-radius: 0 0 0 10px;
+    -o-border-radius: 0 0 0 10px;
+}
+
+@media (max-width: 767px) {
+    .flex .monthly {
+        flex-basis: 100%;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
+
+.flex .monthly h2 {
+    color: white;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.flex .monthly .price {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.flex .monthly .price span {
+    color: #ddd;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.flex .monthly .access {
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+.flex .monthly .button {
+    background-color: var(--bright-yellow);
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.flex .monthly .button a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.flex .why-us {
+    flex-basis: 50%;
+    background-color: #49bebd;
+    border-radius: 0 0 10px 0;
+    -webkit-border-radius: 0 0 10px 0;
+    -moz-border-radius: 0 0 10px 0;
+    -ms-border-radius: 0 0 10px 0;
+    -o-border-radius: 0 0 10px 0;
+}
+
+@media (max-width: 767px) {
+    .flex .why-us {
+        flex-basis: 100%;
+        border-radius: 0 0 10px 10px;
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        -ms-border-radius: 0 0 10px 10px;
+        -o-border-radius: 0 0 10px 10px;
+    }
+}
+
+.flex .why-us h2 {
+    color: white;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.flex .why-us p {
+    color: #eee;
+}
